@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { AppComponent } from './app.component';
 import { TableComponent } from './table/table.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { TableComponent } from './table/table.component';
   ],
   imports: [
     BrowserModule,
-    Ng2SmartTableModule
+    Ng2SmartTableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
